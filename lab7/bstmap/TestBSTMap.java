@@ -1,4 +1,4 @@
-package bstmap;
+package lab7.bstmap;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
