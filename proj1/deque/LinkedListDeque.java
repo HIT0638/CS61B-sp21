@@ -9,7 +9,7 @@ import java.util.Objects;
  *
  * @param <T>
  */
-public class LinkedListDeque<T> {
+public class LinkedListDeque<T> implements Deque<T> {
     /**
      * Node类，声明了各个结点的基本属性和析构方法
      */
@@ -63,17 +63,6 @@ public class LinkedListDeque<T> {
         sentLast.prev.next = p;
         sentLast.prev = p;
     }
-
-    /**
-     * 判断队列是否为空
-     * @return true 如果队列为空，否则返回false
-     */
-    public boolean isEmpty() {
-        if(size == 0)
-            return true;
-        return false;
-    }
-
     /**
      * 返回队列的元素个数
      * @return size 元素个数
